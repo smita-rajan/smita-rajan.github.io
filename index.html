@@ -22,6 +22,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
@@ -42,6 +46,9 @@
     header {
       border-bottom: 1px solid var(--border);
       background: var(--card);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     .nav {
@@ -192,7 +199,6 @@
 
   <main>
     <section class="hero">
-      <!-- Replace profile.jpg with your own image, or delete this image line. -->
       <img class="portrait" src="profile.jpg" alt="Portrait of Smita Rajan" />
 
       <div>
@@ -200,7 +206,11 @@
         <p class="subtitle">PhD Student in Mathematics · UC Berkeley</p>
 
         <p>
-          I am a second-year PhD student in mathematics at UC Berkeley, where I study algebraic geometry. More specifically, I am interested in intersection theory, moduli of curves, and tropical geometry. I am jointly advised by <a href="https://math.berkeley.edu/~bernd/">Bernd Sturmfels</a> and <a href="https://math.berkeley.edu/~hlarson/">Hannah Larson</a>. I am grateful for the support of the NSF GRFP and the UC Berkeley Chancellor's Fellowship.
+          I am a second-year PhD student in mathematics at UC Berkeley, where I study algebraic geometry. More specifically, I am interested in intersection theory, moduli of curves, and tropical geometry. I am jointly advised by <a href="https://math.berkeley.edu/~bernd/">Bernd Sturmfels</a> and <a href="https://math.berkeley.edu/~hlarson/">Hannah Larson</a>. Previously, I was an undergraduate at Brown University where I studied mathematics and physics.
+        </p>
+
+        <p>
+          I am grateful for the support of the NSF GRFP and the UC Berkeley Chancellor's Fellowship.
         </p>
 
         <p>
@@ -274,7 +284,7 @@
   </main>
 
   <footer>
-    Last updated: April 2026 
+    Last updated: April 2026
   </footer>
 </body>
 </html>
